@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    tools:context=".ui.aty.options.SettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_setting_tb_toolbar"
+        style="@style/toolbar_style">
+
+        <TextView
+            style="@style/toolbar_gravity_title"
+            android:text="@string/setting"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_setting_tb_toolbar"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/activity_main_ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@mipmap/input_line"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingLeft="@dimen/padding10"
+                    android:text="@string/flight_display_lable"
+                    android:textSize="@dimen/textSize18"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/activity_setting_sc_display"
+                    style="@style/SwitchCompatStyle"
+                    toggle:showText="true"
+                    toggle:tbBorderWidth="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:paddingLeft="@dimen/padding10"
+                    android:text="@string/switch_network_modo"
+                    android:textSize="@dimen/textSize18"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/activity_setting_sc_network"
+                    style="@style/SwitchCompatStyle"
+                    toggle:showText="true"
+                    toggle:tbBorderWidth="1dp"/>
+            </LinearLayout>
+            <!-- 习惯手 -->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="6"-->
+            <!--android:paddingLeft="@dimen/padding10"-->
+            <!--android:text="@string/inure_hand"-->
+            <!--android:textSize="@dimen/textSize18"/>-->
+
+            <!--<android.support.v7.widget.SwitchCompat-->
+            <!--android:id="@+id/activity_setting_sc_hand"-->
+            <!--style="@style/SwitchCompatStyle"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textOff="@string/inure_right_hand"-->
+            <!--android:textOn="@string/inure_left_hand"-->
+            <!--toggle:showText="true"-->
+            <!--toggle:tbBorderWidth="1dp"/>-->
+            <!--</LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/padding10"
+                    android:text="@string/speed"
+                    android:textSize="@dimen/textSize18"/>
+
+                <RadioGroup
+                    android:id="@+id/activity_setting_rg_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/activity_setting_rb_knots"
+                        style="@style/radio_group_style"
+                        android:checked="true"
+                        android:text="@string/knots"/>
+
+                    <RadioButton
+                        android:id="@+id/activity_setting_rb_km"
+                        style="@style/radio_group_style"
+                        android:checked="false"
+                        android:text="@string/km_h"/>
+
+                    <RadioButton
+                        android:id="@+id/activity_setting_rb_mph"
+                        style="@style/radio_group_style"
+                        android:checked="false"
+                        android:text="@string/mph"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/padding10"
+                    android:text="@string/altitude"
+                    android:textSize="@dimen/textSize18"/>
+
+                <RadioGroup
+                    android:id="@+id/activity_setting_rg_altitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/activity_setting_rb_feet"
+                        style="@style/radio_group_style"
+                        android:checked="true"
+                        android:text="@string/foot"/>
+
+                    <RadioButton
+                        android:id="@+id/activity_setting_rb_mi"
+                        style="@style/radio_group_style"
+                        android:checked="false"
+                        android:text="@string/rice"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/padding10"
+                    android:text="@string/distancetion"
+                    android:textSize="@dimen/textSize18"/>
+
+                <RadioGroup
+                    android:id="@+id/activity_setting_rg_distancetion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/activity_setting_dis_rb_kilometer"
+                        style="@style/radio_group_style"
+                        android:checked="true"
+                        android:text="@string/kilometer"/>
+
+                    <RadioButton
+                        android:id="@+id/activity_setting_dis_rb_metres"
+                        style="@style/radio_group_style"
+                        android:text="@string/rice"/>
+
+                    <RadioButton
+                        android:id="@+id/activity_setting_dis_rb_mile"
+                        style="@style/radio_group_style"
+                        android:text="@string/mile"/>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

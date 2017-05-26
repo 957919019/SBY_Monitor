@@ -1,0 +1,215 @@
+<resources>
+    <string name="app_name">飞行监视</string>
+    <string name="applogo">圣博赢科技有限公司</string>
+
+    <string name="network_disable">网络异常\n点击尝试重试</string>
+    <string name="no_content">天呐\n这里竟然是空的</string>
+
+    <!--  00000000000000000000000000000000000      左侧选项      00000000000000000000000000000000000 -->
+
+    <!-- 设置 -->
+    <string name="setting">设置</string>
+    <string name="flight_display_lable">飞机标签显示</string>
+    <string name="switch_network_modo">3G/4G模式</string>
+    <string name="inure_hand">习惯手</string>
+    <string name="inure_left_hand">左</string>
+    <string name="inure_right_hand">右</string>
+    <string name="speed">速度</string>
+    <string name="knots">knots</string>
+    <string name="km_h">Km/h</string>
+    <string name="mph">Mph</string>
+    <string name="altitude">海拔</string>
+    <string name="rice">米</string>
+    <string name="foot">英尺</string>
+    <string name="distancetion">距离</string>
+    <string name="kilometer">千米</string>
+    <string name="mile">海里</string>
+    <string name="label_on">标签已打开</string>
+    <string name="label_off">标签已关闭</string>
+    <string name="mobile_on_tip">当前可以使用移动网络，\n 请注意您的流量！</string>
+    <string name="mobile_off_tip">已为您关闭移动网络，\n 当前仅使用WIFI！</string>
+
+    <!-- 反馈 -->
+    <string name="feedback">反馈</string>
+    <string name="input_your_feedback_content">请输入反馈内容</string>
+    <string name="upload_to_our">提交</string>
+
+    <!-- 帮助 -->
+    <string name="help">帮助</string>
+    <string name="customer_service_telephone_numbers"><u>4006666888</u></string>
+    <string name="dial_to_customer_service"><u>联系客服</u></string>
+    <string name="customer_service"><u>客服电话</u></string>
+
+    <!-- 功能区域> 数据统计 -->
+    <string name="statistics_data">统计数据</string>
+    <string name="now_data">今日数据</string>
+    <string name="history_data">历史数据</string>
+    <string name="choose_one_date">请选择时间</string>
+    <string name="re_choose_time_please">时间大于当前时间\n请您重新选择时间</string>
+    <string name="click_to_choose_start_time">选择开始时间</string>
+    <string name="click_to_choose_end_time">选择结束时间</string>
+    <string name="implement_flight_num">执行飞机数：</string>
+    <string name="assignments_area_num">作业区域数：</string>
+    <string name="chooseCompanyPlease">请选择公司</string>
+    <string name="flying_time">飞行时长：</string>
+    <string name="start_time">起始时间：</string>
+    <string name="end_time">结束时间：</string>
+    <string name="pilot">飞行员：</string>
+    <string name="flight_code">飞机编号：</string>
+    <string name="implement_all_frequency">执行总架次：</string>
+    <string name="flight_all_hours">飞行总小时数：</string>
+
+    <!--  00000000000000000000000000000000000      用户登录注册      00000000000000000000000000000000000 -->
+
+    <!-- 公司选择 activity_choose_company -->
+    <string name="choose_company_please">请选择公司</string>
+    <string name="search">搜索</string>
+    <string name="acount_resiger">账号注册</string>
+
+    <!-- 注册 -->
+    <string name="forget_password">忘记密码</string>
+    <string name="recover_pwd">找回密码</string>
+
+    <!-- 登录 -->
+    <string name="need_to_call">需要拨打电话的权限</string>
+    <string name="title_activity_favo_address">FavoAddress</string>
+    <string name="control_every_thing">一切动态尽在掌握</string>
+    <string name="flight_system">飞行监视</string>
+    <string name="connect_to_service_now">是否现在联系客服</string>
+    <string name="input_account">请输入邮箱/账号</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="login_button">登录</string>
+    <string name="register_button">注册</string>
+    <string name="connect_to_service">联系客服\t<u>400-0000-666</u></string>
+
+    <!-- 找回密码 -->
+    <string name="input_mobile_please">请输入手机</string>
+    <string name="input_code_please">输入验证码</string>
+    <string name="get_sms_code">获取验证码</string>
+    <string name="input_pwd_please">请输入密码</string>
+    <string name="find_ok">找回</string>
+    <string name="connect_service">联系客服\t<u>400-0000-666</u></string>
+
+    <!-- 我的 -->
+    <string name="me">我的</string>
+    <string name="username">用户名称</string>
+    <string name="company_name">公司名称：</string>
+    <string name="use_airport_num">使用机场数量：</string>
+    <string name="work_area_num">作业区域数：</string>
+    <string name="running_flight_num">运行飞机数：</string>
+    <string name="work_type">作业类型：</string>
+    <string name="air_model">飞机型号</string>
+    <string name="logout">退出</string>
+
+    <!-- 飞机型号 -->
+    <string name="flight_model">飞机型号</string>
+    <string name="number">数量</string>
+
+    <!--  00000000000000000000000000000000000      地图功能      00000000000000000000000000000000000 -->
+
+    <!-- 收藏页面 activity_favo_address -->
+    <string name="my_favorites">我的收藏</string>
+    <string name="no_favo">无收藏地址</string>
+    <string name="add">新增</string>
+    <string name="del_all">清空所有</string>
+    <string name="title_activity_favo_add">FavoAddActivity</string>
+
+    <!-- 添加收藏 -->
+    <string name="favo_search_hint">搜索内容</string>
+    <string name="my_location">我的位置</string>
+    <string name="map_choose_point">地图选点</string>
+    <string name="see_history">查看历史</string>
+    <string name="search_poi_result">地点搜索结果</string>
+    <string name="favo_succ">收藏成功，您可打开我的收藏查看。</string>
+    <string name="favo_failed">添加失败，请稍后重试。</string>
+
+
+    <!-- 搜索 -->
+    <string name="search_hint">编号/公司/飞行员/机场</string>
+    <string name="quick_search">快捷搜索</string>
+    <string name="aircraft_number">飞机编号</string>
+    <string name="corporate_name">公司名称</string>
+    <string name="aircraft_type">飞机型号</string>
+    <string name="search_edittext_hint">请输入 航班/飞行员 </string>
+
+
+    <!-- 搜索结果 -->
+
+    <string name="search_result">搜索结果</string>
+    <string name="search_no_result">未搜索到任何数据</string>
+
+    <!-- 分享 -->
+    <string name="share_to">分享到：</string>
+
+    <!--  00000000000000000000000000000000000      主界面      00000000000000000000000000000000000 -->
+    <!-- 区域显示 -->
+    <string name="area_display">区域显示</string>
+
+    <string name="report_point">报告点</string>
+    <string name="fixed_airspace">固定空域</string>
+    <string name="ranger_route">护林航线</string>
+    <string name="airport_conversion">农化机场</string>
+    <string name="ranger_airport">护林机场</string>
+    <string name="civil_aviation_airport">民航机场</string>
+    <string name="no_fly_zone">禁飞区</string>
+    <string name="refueling_point">加油点</string>
+    <string name="civil_aviation_route">民航航线</string>
+
+    <string name="playback_track">轨迹回放</string>
+    <string name="local_area">本场区域</string>
+    <string name="work_area">作业区域</string>
+
+    <!-- 飞机筛选 -->
+    <string name="ok">确定</string>
+    <string name="flight_choose">飞机筛选</string>
+    <string name="airport">起降机场：</string>
+    <string name="air_num">飞机编号：</string>
+    <string name="flight_model2">飞机型号：</string>
+    <string name="pilot_choose">飞行员：</string>
+    <string name="work_style">作业类型：</string>
+
+
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+
+    <string name="share">分享</string>
+    <string name="favorites">收藏</string>
+    <string name="company">公司：</string>
+    <string name="choose_type">切换视图</string>
+    <string name="narmal">普通</string>
+    <string name="Done">完成</string>
+    <string name="password">密码：</string>
+    <string name="new_password">新密码：</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="cancle">取消</string>
+    <string name="emain">邮箱：</string>
+    <string name="mobile">手机：</string>
+    <string name="cancel">取消</string>
+    <string name="repwd">重复密码：</string>
+    <string name="validate_code">验证码：</string>
+    <string name="reget_sms_code">重新发送</string>
+    <string name="reget_sms_code_countdown">重新发送(%s)</string>
+    <string name="ON">ON</string>
+    <string name="OFF">OFF</string>
+    <string name="register_account">注册</string>
+    <string name="email_account">请输入邮箱/账号</string>
+    <string name="choose_account_please">请选择账户</string>
+    <string name="input_keyword_please">请输入关键字</string>
+    <string name="input_email_please">请输入邮箱</string>
+    <string name="input_repwd_please">请重复密码</string>
+
+    <string name="title_activity_test">TestActivity</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="account">账号：</string>
+    <!-- 保存截图和分享 -->
+    <string name="wait_please">请稍后...</string>
+    <string name="save_failed_and_can_not_find_reason">保存截图失败：未知的错误</string>
+    <string name="screenshot_have_already_save_at">截图已保存在：</string>
+
+    <string name="location_failed">定位失败，请开启定位权限\n并确保网络通畅。</string>
+    <string name="sorry_can_not_find_location">网络延迟\n未能找到地标\n请手动输入</string>
+    <string name="press_again_to_exit">再按一次退出程序</string>
+    <string name="press_to_change_state">点击、长按、双击地图以获取经纬度和地图状态</string>
+</resources>

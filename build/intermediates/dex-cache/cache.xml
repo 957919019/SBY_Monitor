@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\json-lib-2.4-jdk15.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="136743e0d12df4e785e62b48618cee169b2ae546">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\2\json-lib-2.4-jdk15_48f645fe6102d0f4bfbf4b186c6b7a7a6c1feac8\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\library_calendar\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9214f7542700fadecbd2b6054b88cc1e1edb3fa0">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\pre-dexed\debug\classes_5bcefc30c1d2bb5028f217c68aa7ad4612bafdbb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\json-lib-2.4-jdk15.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="136743e0d12df4e785e62b48618cee169b2ae546">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\pre-dexed\debug\json-lib-2.4-jdk15_48f645fe6102d0f4bfbf4b186c6b7a7a6c1feac8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_util_v4_3_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f35f848bd2d9c4fadaa9410b4de1756c58cc7bfd">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_util_v4_3_1_dfbd213978b90a4b6caa3269804d25c80ab62547\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\locSDK_6.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\2\locSDK_6.13_b660eff85c0cef1cc170fa23a522933b6e060e25\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_util_v4_3_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f35f848bd2d9c4fadaa9410b4de1756c58cc7bfd">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\pre-dexed\debug\baidumapapi_util_v4_3_1_dfbd213978b90a4b6caa3269804d25c80ab62547.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\locSDK_6.13.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\pre-dexed\debug\locSDK_6.13_b660eff85c0cef1cc170fa23a522933b6e060e25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\fastjson-1.2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f675e9a1b2bf1224183005752a9214226e8aa8e">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\pre-dexed\debug\fastjson-1.2.5_6324e22c39ee8d12fec2ad7e1a89be5f1b4a6091.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_cloud_v4_3_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d24c8d407f1506d4216d899ae8dc24e78ca00d03">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_cloud_v4_3_1_a716b3db55489204938e8a0a52a688c3eaea15ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_radar_v4_3_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1fc076f176eb31a019a30c9e335c4b2960abfbc2">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_radar_v4_3_1_8f1b971abb0396070b1b1b1e2677ab6d18a8acf2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_base_v4_3_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bd351c75a2320b69d34b4e8f02c1b3bc029265ec">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_base_v4_3_1_9eb79f2e8ef63e681318d6de5fced0c81c3652b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_radar_v4_3_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1fc076f176eb31a019a30c9e335c4b2960abfbc2">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\pre-dexed\debug\baidumapapi_radar_v4_3_1_8f1b971abb0396070b1b1b1e2677ab6d18a8acf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_cloud_v4_3_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d24c8d407f1506d4216d899ae8dc24e78ca00d03">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\pre-dexed\debug\baidumapapi_cloud_v4_3_1_a716b3db55489204938e8a0a52a688c3eaea15ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_search_v4_3_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e6645eba59f74b0fca84ce7d26f8bdc7160764e">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\pre-dexed\debug\baidumapapi_search_v4_3_1_eb84efa7d72572a6f69f2b6f1f07d68398503ca2.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c89baf6a3b9c5542a7767dace85c6762a0284c22\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_search_v4_3_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e6645eba59f74b0fca84ce7d26f8bdc7160764e">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_search_v4_3_1_eb84efa7d72572a6f69f2b6f1f07d68398503ca2\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_base_v4_3_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bd351c75a2320b69d34b4e8f02c1b3bc029265ec">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\pre-dexed\debug\baidumapapi_base_v4_3_1_9eb79f2e8ef63e681318d6de5fced0c81c3652b5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\fastjson-1.2.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f675e9a1b2bf1224183005752a9214226e8aa8e">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\2\fastjson-1.2.5_6324e22c39ee8d12fec2ad7e1a89be5f1b4a6091\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_map_v4_3_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c28d81ba8665fd2f5176a218f4829e7457fb0276">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\pre-dexed\debug\baidumapapi_map_v4_3_1_45b8323a3940fce7f7c78b5e52eea3a9662ffa48.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\libs\baidumapapi_map_v4_3_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c28d81ba8665fd2f5176a218f4829e7457fb0276">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_map_v4_3_1_45b8323a3940fce7f7c78b5e52eea3a9662ffa48\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7be887b01118b852609488f1f50351d0abca6451">
+        <dex dex="E:\OneDrive\AndroidStudioProjects\practice\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_77f9dee5a9a01934f2c1a0bf7958e8d1d6bae447\classes.dex" />
+    </item>
+
+</items>

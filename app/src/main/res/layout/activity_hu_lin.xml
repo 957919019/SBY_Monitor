@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--大标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="飞行计划"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <!--标题：基础信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/web_title_blue"
+                android:text="基础信息：" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="计划编号：" />
+
+            <EditText
+                android:id="@+id/et_jhbh"
+                style="@style/web_title_et" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="飞行日期：" />
+
+
+            <TextView
+                android:id="@+id/tv_fltTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/juxing_3raidus"
+                android:drawablePadding="8dp"
+                android:drawableRight="@mipmap/calendar"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="选择时间"
+                android:textSize="13sp" />
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="观  察  员：" />
+
+            <EditText
+                android:id="@+id/et_gcy"
+                style="@style/web_title_et" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="空勤人数：" />
+
+            <EditText
+                android:id="@+id/et_kqrs"
+                style="@style/web_title_et" />
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="地勤人数：" />
+
+            <EditText
+                android:id="@+id/et_dqrs"
+                style="@style/web_title_et" />
+        </LinearLayout>
+
+        <!--标题：起飞机场-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/web_title_blue"
+                android:text="起飞机场：" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="机场名称：" />
+
+            <Spinner
+                android:id="@+id/sp_qfJC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_getcode"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="预计起飞时间：" />
+
+            <TextView
+                android:id="@+id/tv_startTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/juxing_3raidus"
+                android:drawablePadding="8dp"
+                android:drawableRight="@mipmap/calendar"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="选择时间"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+        <!--标题：降落机场-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/web_title_blue"
+                android:text="降落机场：" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="机场名称：" />
+
+            <Spinner
+                android:id="@+id/sp_jlJC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_getcode"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="预计降落时间：" />
+
+            <TextView
+                android:id="@+id/tv_endTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/juxing_3raidus"
+                android:drawablePadding="8dp"
+                android:drawableRight="@mipmap/calendar"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="选择时间"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+        <!--标题：备降机场-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/web_title_blue"
+                android:text="备降机场：" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="机场名称：" />
+
+            <Spinner
+                android:id="@+id/sp_bjJC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_getcode"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+        <!--标题：飞机信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/web_title_blue"
+                android:text="飞机信息：" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="机型：" />
+
+            <Spinner
+                android:id="@+id/sp_JX"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_getcode"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="机号：" />
+
+            <Spinner
+                android:id="@+id/sp_JH"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_getcode"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="机长：" />
+
+            <Spinner
+                android:id="@+id/sp_JZ"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_getcode"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/web_title_2"
+                android:text="应答编码：" />
+
+            <EditText
+                android:id="@+id/et_fltYD"
+                style="@style/web_title_et" />
+        </LinearLayout>
+        <!--标题：航线信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/web_title_blue"
+                android:text="航线信息：" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="航线及高度：" />
+
+            <EditText
+                android:id="@+id/et_lingAndHeight"
+                style="@style/web_title_et" />
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="应答编码：" />
+
+            <EditText
+                android:id="@+id/et_hxYingDa"
+                style="@style/web_title_et" />
+        </LinearLayout>
+        <!--标题：空域信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/web_title_blue"
+                android:text="空域信息：" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="空域范围及高度：" />
+
+            <EditText
+                android:id="@+id/et_kyMsg"
+                style="@style/web_title_et" />
+
+        </LinearLayout>
+        <!--标题：其他信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/web_title_blue"
+                android:text="其他信息：" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="飞行单位：" />
+
+            <Spinner
+                android:id="@+id/sp_fxDanWei"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_getcode"
+                android:spinnerMode="dropdown" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="联系人：" />
+
+            <EditText
+                android:id="@+id/et_lianxiren"
+                style="@style/web_title_et" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="联系人电话：" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/web_title_et" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="备注：" />
+
+            <EditText
+                android:id="@+id/et_remark"
+                style="@style/web_title_et" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/jh_commit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="#0099ff"
+            android:text="保存并提交"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>

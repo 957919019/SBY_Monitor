@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    tools:context="com.sby.practice.ui.aty.favorite.FavoActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_favo_address_tb_toolbar"
+        style="@style/toolbar_style">
+
+        <TextView
+            style="@style/toolbar_gravity_title"
+            android:text="@string/my_favorites"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_favo_address_rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_favo_address_tv_delAll"
+        android:layout_below="@id/activity_favo_address_tb_toolbar"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <TextView
+        android:id="@id/activity_favo_address_tv_delAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:drawableStart="@mipmap/ic_del_all"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/del_all"/>
+
+        <!--android:layout_above="@+id/activity_favo_address_bt_add"-->
+    <!--<Button-->
+        <!--android:id="@+id/activity_favo_address_bt_add"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/ios_btntext_blue"-->
+        <!--android:text="@string/add"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/textSize18"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/activity_favo_tv_null"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@id/activity_favo_address_bt_add"-->
+    <!--android:layout_below="@id/activity_favo_address_tb_toolbar"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center"-->
+    <!--android:textSize="@dimen/textSize18"-->
+    <!--android:text="@string/no_favo"-->
+    <!--android:textColor="@color/black"/>-->
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

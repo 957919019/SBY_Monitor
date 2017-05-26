@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/light_gray"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_catelog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_choose_cat"
+        android:paddingBottom="@dimen/padding10"
+        android:paddingLeft="@dimen/padding15"
+        android:paddingTop="@dimen/padding10"
+        android:textColor="@color/pop_choose_catelog"
+        android:textSize="@dimen/textSize18"/>
+
+</LinearLayout>

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sby.practice.ui.aty.TempActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        style="@style/toolbar_style"
+        android:background="@color/deep_sky_blue">
+
+        <LinearLayout
+            android:id="@+id/ll_tb_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@drawable/home_search_switch1"
+                android:clickable="false"
+                android:drawableLeft="@mipmap/nic_search"
+                android:drawablePadding="20dp"
+                android:drawableRight="@mipmap/nic_right_triangle"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="全部"
+                android:paddingBottom="4dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="4dp"
+                android:textColorHint="@android:color/darker_gray"/>
+
+            <com.sby.widget.EditTextWithClear
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_weight="3"
+                android:background="@drawable/home_search_switch_et2"
+                android:clickable="false"
+                android:enabled="false"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/dl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <!--主布局-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/mv_mapview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rg_button"
+                android:layout_marginTop="?actionBarSize"
+                android:layout_weight="1"
+                android:clickable="true"/>
+
+            <RadioGroup
+                android:id="@id/rg_button"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:divider="@drawable/main_space_white_line"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <RadioButton
+                    android:id="@+id/rb_quyu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rg_home_selector"
+                    android:button="@null"
+                    android:drawableLeft="@mipmap/nic_rb_qyxs"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="区域显示"
+                    android:textColor="@color/rb_home_textcolor"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_choose"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rg_home_selector"
+                    android:button="@null"
+                    android:drawableLeft="@mipmap/nic_rb_choose"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="飞机选择"
+                    android:textColor="@color/rb_home_textcolor"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_my"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rg_home_selector"
+                    android:button="@null"
+                    android:drawableLeft="@mipmap/nic_rb_my"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="我的"
+                    android:textColor="@color/rb_home_textcolor"
+                    android:textSize="18sp"/>
+            </RadioGroup>
+
+            <com.fangxu.allangleexpandablebutton.AllAngleExpandableButton
+                android:id="@+id/aeb_mune"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/rg_button"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                app:aebAnimDurationMillis="175"
+                app:aebButtonElevation="4dp"
+                app:aebButtonGapDp="80dp"
+                app:aebEndAngleDegree="180"
+                app:aebIsSelectionMode="false"
+                app:aebMainButtonRotateAnimDurationMillis="300"
+                app:aebMainButtonRotateDegree="-135"
+                app:aebMainButtonSizeDp="50dp"
+                app:aebRippleEffect="true"
+                app:aebStartAngleDegree="90"
+                app:aebSubButtonSizeDp="50dp"/>
+
+            <!-- 飞机信息 -->
+            <LinearLayout
+                android:id="@+id/ll_fltInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:animateLayoutChanges="true"
+                android:background="@color/activity_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="跟踪"
+                        android:textSize="18sp"/>
+
+                    <com.zcw.togglebutton.ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="回放"
+                        android:textSize="18sp"/>
+
+                    <com.zcw.togglebutton.ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@mipmap/temp_flt"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@mipmap/input_line"
+                    android:dividerPadding="10dp"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="飞机编号："
+                            android:textSize="@dimen/textSize18"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="飞机型号："
+                            android:textSize="@dimen/textSize18"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="出发地："
+                            android:textSize="@dimen/textSize18"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="抵达地："
+                            android:textSize="@dimen/textSize18"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="作业区域："
+                        android:textSize="@dimen/textSize18"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="东经："
+                            android:textSize="@dimen/textSize18"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="北纬："
+                            android:textSize="@dimen/textSize18"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="高度："
+                            android:textSize="@dimen/textSize18"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="速度："
+                            android:textSize="@dimen/textSize18"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="出发时间："
+                            android:textSize="@dimen/textSize18"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="到达时间："
+                            android:textSize="@dimen/textSize18"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="飞行员："
+                            android:textSize="@dimen/textSize18"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="所属公司："
+                            android:textSize="@dimen/textSize18"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 收藏界面 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:animateLayoutChanges="true"
+                android:background="@color/activity_background"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    style="@style/BlueEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:hint="坐标名："
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textSize18"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="东经："
+                        android:textSize="@dimen/textSize18"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="15dp"
+                        android:text="北纬："
+                        android:textSize="@dimen/textSize18"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableLeft="@mipmap/nic_share"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:text="@string/share"
+                        android:textSize="18sp"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/gray"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:drawableLeft="@mipmap/nic_collect"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:text="@string/favorites"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 选择日期回放 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="选择回放日期："
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="选择回放日期："
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bt_login">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="回放"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 选择飞机 -->
+            <LinearLayout
+                android:id="@+id/ll_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_catalog"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_type"
+                    android:layout_width="0dp"
+                    android:background="@color/white"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+            <!-- 区域显示 -->
+            <LinearLayout
+                android:id="@+id/ll_quyu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="?attr/actionBarSize"
+                android:background="@color/activity_background"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cb_baogaodian"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cb_kongyu"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cb_hulinline"
+                        android:button="@null"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cb_nonghua"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cb_hulin_airport"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cb_minhang_airport"
+                        android:button="@null"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cb_jinfei"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cb_jiayou"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cb_minhang_line"
+                        android:button="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nv"
+            android:layout_width="256dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:headerLayout="@layout/nv_header"
+            app:menu="@menu/nv_menu"/>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

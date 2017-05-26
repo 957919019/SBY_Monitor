@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/activity_background"
+              android:clickable="false"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        style="@style/toolbar_style"
+        app:cardBackgroundColor="@color/cardview_light_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding10"
+            android:text="@string/flight_choose"
+            android:textSize="@dimen/textSize18"/>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/spinner_style_title"
+                android:text="@string/airport"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/pop_window_choose_flight_sp_airport"
+                style="@style/spinner_style"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/spinner_style_title"
+                android:text="@string/air_num"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/pop_window_choose_flight_sp_model"
+                style="@style/spinner_style"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/spinner_style_title"
+                android:text="@string/flight_model2"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/pop_window_choose_flight_sp_number"
+                style="@style/spinner_style"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/spinner_style_title"
+                android:text="@string/pilot_choose"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/pop_window_choose_flight_sp_pilot"
+                style="@style/spinner_style"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/spinner_style_title"
+                android:text="@string/work_style"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/pop_window_choose_flight_sp_type"
+                style="@style/spinner_style"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/pop_window_choose_flight_cv_ok"
+        style="@style/toolbar_style">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/ok"
+            android:textSize="@dimen/textSize18"/>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

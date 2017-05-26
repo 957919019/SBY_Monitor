@@ -1,0 +1,230 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 状态栏和标题栏颜色-->
+        <item name="colorPrimary">@color/deep_sky_blue</item>
+        <item name="colorPrimaryDark">@color/deep_sky_blue</item>
+        <item name="colorAccent">@color/deep_sky_blue</item>
+        <!-- 标题颜色-->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!--<item name="android:textSize">20sp</item>-->
+        <!-- 溢出菜单图标颜色-->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!-- 动画 -->
+        <item name="android:windowContentTransitions">true</item>
+        <!-- 箭头 -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!-- 溢出菜单文字颜色-->
+        <item name="textAppearanceLargePopupMenu">@style/OverflowMenuTextAppearance</item>
+        <!-- 菜单项点击selector-->
+        <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
+        <item name="android:actionMenuTextColor">@android:color/black</item>
+    </style>
+
+    <!-- Blue application theme. -->
+    <style name="BlueTheme" parent="@style/BaseBlueTheme">
+    </style>
+
+    <style name="BaseBlueTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/deep_sky_blue</item>
+        <item name="colorPrimaryDark">@color/deep_sky_blue</item>
+        <item name="colorAccent">@color/deep_sky_blue</item>
+        <!-- 标题颜色-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- 溢出菜单图标颜色-->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!-- 动画 -->
+        <item name="android:windowContentTransitions">true</item>
+        <!-- 箭头 -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!-- 溢出菜单文字颜色-->
+        <item name="textAppearanceLargePopupMenu">@style/OverflowMenuTextAppearance</item>
+        <!-- 菜单项点击selector-->
+        <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
+    </style>
+
+
+    <!-- 左边的箭头指示-->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <!--溢出菜单文字样式-->
+    <style name="OverflowMenuTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- ToolBar样式 -->
+    <style name="toolbar_style">
+        <item name="android:elevation">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">@color/deep_sky_blue</item>
+    </style>
+
+    <!-- Toolbar居中的Title -->
+    <style name="toolbar_gravity_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSize22</item>
+    </style>
+
+    <style name="BlueEdittext" parent="Base.Theme.AppCompat.CompactMenu">
+            <item name="colorControlNormal">@color/deep_sky_blue</item>
+            <item name="colorControlActivated">@color/deep_sky_blue</item>
+    </style>
+
+    <!-- 横向均分组件 -->
+    <style name="horizontalWeight">
+        <item name="android:textSize">@dimen/textSize18</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- RadioGroup -->
+    <style name="radio_group_style">
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/x20</item>
+        <item name="android:paddingRight">@dimen/x20</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+
+    <!-- 左侧18sp大小自适应的文字 -->
+    <style name="left_text_18sp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 右侧18sp占全部剩余屏幕的文字 -->
+    <style name="right_text_18sp">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--  日历选择器的弹窗动画 -->
+    <style name="pop_calendar_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_calendar_show_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pop_calendar_hidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <!-- 飞机筛选Spinner样式 -->
+    <style name="spinner_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:spinnerMode">dialog</item>
+        <item name="android:padding">@dimen/padding10</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="spinner_style_title">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize18</item>
+    </style>
+
+    <!-- SwitchCompat样式 -->
+    <style name="SwitchCompatStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textOff">关</item>
+        <item name="android:textOn">开</item>
+    </style>
+
+    <!-- 底部弹出动画样式 -->
+    <style name="bottom_to_top">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!-- Menu弹出动画样式 -->
+    <style name="top_to_bottom">
+        <item name="android:windowEnterAnimation">@anim/mune_in</item>
+        <item name="android:windowExitAnimation">@anim/mune_out</item>
+    </style>
+
+    <!--退出程序dialog背景全透明无边框theme -->
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--护林计划，查询计划，具体输入内容-->
+    <style name="web_title_et" >
+
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/juxing_3raidus</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!--护林计划，查询计划，小标题-->
+    <style name="web_title_2" >
+    <item name="android:textColor">@color/black</item>
+    <item name="android:layout_marginLeft">15dp</item>
+    <item name="android:textSize">13sp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:padding">5dp</item>
+    </style>
+
+    <!--护林计划，查询计划，小标题蓝色字体，样式-->
+    <style name="web_title_blue_line" >
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <!--护林计划，查询计划，小标题蓝色字体，样式-->
+    <style name="web_title_blue" >
+        <item name="android:textColor">@color/sky_blue</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+    </style>
+</resources>

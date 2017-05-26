@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_track_play_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sby.practice.ui.aty.TrackPlayBackActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_track_play_back_tb_toolbar"
+        style="@style/toolbar_style">
+
+        <TextView
+            style="@style/toolbar_gravity_title"
+            android:text="@string/playback_track"/>
+    </android.support.v7.widget.Toolbar>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/activity_track_play_back_mv_mapview"
+        android:layout_below="@id/activity_track_play_back_tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"/>
+
+</RelativeLayout>

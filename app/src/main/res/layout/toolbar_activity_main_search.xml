@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    style="@style/toolbar_style"
+    android:background="@color/deep_sky_blue">
+
+    <TextView
+        android:id="@+id/public_toolbar_tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_backgroud"
+        android:drawableLeft="@mipmap/search_icon"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center"
+        android:hint="@string/search_hint"
+        android:maxLines="1"
+        android:padding="@dimen/padding10"
+        android:layout_marginRight="40dp"
+        android:textColorHint="@color/gray"/>
+
+</android.support.v7.widget.Toolbar>
+

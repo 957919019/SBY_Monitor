@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical"
+    tools:context=".ui.aty.options.StatisticsData">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_statistics_data_tb_toolbar"
+        style="@style/toolbar_style">
+
+        <TextView
+            style="@style/toolbar_gravity_title"
+            android:text="@string/statistics_data"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/now_data"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@mipmap/input_line"
+                android:dividerPadding="10dp"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_text_18sp"
+                        android:text="@string/implement_flight_num"/>
+
+                    <TextView
+                        android:id="@+id/activity_statistics_data_tv_flightNum"
+                        style="@style/right_text_18sp"
+                        android:text="架"/>
+
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="5dp">-->
+
+                <!--<TextView-->
+                <!--style="@style/left_text_18sp"-->
+                <!--android:text="@string/assignments_area_num"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/activity_statistics_data_tv_areaNum"-->
+                <!--style="@style/right_text_18sp"-->
+                <!--android:text="块"/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="5dp">-->
+
+                <!--<TextView-->
+                <!--style="@style/left_text_18sp"-->
+                <!--android:text="@string/assignments_area_num"/>-->
+
+                <!--<TextView-->
+                <!--style="@style/right_text_18sp"-->
+                <!--android:text="4块"/>-->
+
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_text_18sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/pilot"/>
+
+                    <Spinner
+                        android:id="@+id/activity_statistics_data_sp_pilot"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="3"
+                        android:spinnerMode="dropdown"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_text_18sp"
+                        android:text="@string/flying_time"/>
+
+                    <TextView
+                        android:id="@+id/activity_statistics_data_tv_todayTime"
+                        style="@style/right_text_18sp"
+                        android:text="小时"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/history_data"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@mipmap/input_line"
+                android:dividerPadding="10dp"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_text_18sp"
+                        android:text="@string/start_time"/>
+
+                    <TextView
+                        android:id="@+id/activity_statistics_data_tv_startTime"
+                        style="@style/right_text_18sp"
+
+                        android:background="?attr/selectableItemBackground"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@mipmap/calendar"
+                        android:hint="@string/click_to_choose_start_time"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/left_text_18sp"
+                        android:text="@string/end_time"/>
+
+                    <TextView
+                        android:id="@+id/activity_statistics_data_tv_endTime"
+                        style="@style/right_text_18sp"
+                        android:background="?attr/selectableItemBackground"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@mipmap/calendar"
+                        android:hint="@string/click_to_choose_end_time"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/left_text_18sp"
+                        android:text="@string/flight_code"/>
+
+                    <Spinner
+                        android:id="@+id/activity_statistics_data_sp_flightNum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="3"
+                        android:spinnerMode="dropdown"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/left_text_18sp"
+                        android:text="@string/pilot"/>
+
+                    <Spinner
+                        android:id="@+id/activity_statistics_data_sp_searchPilot"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="3"
+                        android:spinnerMode="dropdown"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/bt_regester">
+
+                    <Button
+                        android:id="@+id/activity_statistics_data_bt_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="搜索"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/left_text_18sp"
+                        android:text="@string/flying_time"/>
+
+                    <TextView
+                        android:id="@+id/activity_statistics_data_tv_result"
+                        style="@style/right_text_18sp"
+                        android:text="小时"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:divider="@mipmap/input_line"-->
+            <!--android:dividerPadding="@dimen/x30"-->
+            <!--android:orientation="vertical"-->
+            <!--android:showDividers="middle">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="5dp">-->
+
+            <!--<TextView-->
+            <!--style="@style/left_text_18sp"-->
+            <!--android:text="@string/implement_all_frequency"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/activity_statistics_data_tv_allFrequency"-->
+            <!--style="@style/right_text_18sp"-->
+            <!--android:text="32次"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="5dp">-->
+
+            <!--<TextView-->
+            <!--style="@style/left_text_18sp"-->
+            <!--android:text="@string/implement_flight_num"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/activity_statistics_data_tv_implementFlightNum"-->
+            <!--style="@style/right_text_18sp"-->
+            <!--android:text="6架"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="5dp">-->
+
+            <!--<TextView-->
+            <!--style="@style/left_text_18sp"-->
+            <!--android:text="@string/flight_all_hours"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/activity_statistics_data_tv_allHours"-->
+            <!--style="@style/right_text_18sp"-->
+            <!--android:text="600小时"/>-->
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

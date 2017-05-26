@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical"
+    tools:context=".ui.aty.me.MeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_me_tb_toolbar"
+        style="@style/toolbar_style">
+
+        <TextView
+            style="@style/toolbar_gravity_title"
+            android:text="@string/me"/>
+    </android.support.v7.widget.Toolbar>
+
+    <com.ecloud.pulltozoomview.PullToZoomScrollViewEx
+        android:id="@+id/activity_pz_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_me_ly_logout"
+        android:layout_below="@id/activity_me_tb_toolbar"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:id="@id/activity_me_ly_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_red_light"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/activity_me_bt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textSize="@dimen/textSize18"/>
+
+    </android.support.v7.widget.ButtonBarLayout>
+</RelativeLayout>
+
+

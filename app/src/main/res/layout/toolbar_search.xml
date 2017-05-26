@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/tb_toolbar"-->
+        <!--style="@style/toolbar_style">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="2"-->
+                <!--android:background="@drawable/home_search_switch1"-->
+                <!--android:clickable="true"-->
+                <!--android:drawableLeft="@mipmap/nic_search"-->
+                <!--android:drawablePadding="20dp"-->
+                <!--android:drawableRight="@mipmap/nic_right_triangle"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="全部"-->
+                <!--android:lines="1"-->
+                <!--android:maxLines="1"-->
+                <!--android:paddingBottom="4dp"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingTop="4dp"-->
+                <!--android:textColorHint="@android:color/darker_gray"/>-->
+
+            <!--<com.sby.widget.EditTextWithClear-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_weight="3"-->
+                <!--android:allowUndo="true"-->
+                <!--android:background="@drawable/home_search_switch_et2"-->
+                <!--android:drawableRight="@mipmap/search_clear"-->
+                <!--android:enabled="true"-->
+                <!--android:lines="1"-->
+                <!--android:maxLines="1"-->
+                <!--android:paddingBottom="4dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:paddingTop="4dp"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textCursorDrawable="@color/colorPrimaryDark"/>-->
+
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+</LinearLayout>

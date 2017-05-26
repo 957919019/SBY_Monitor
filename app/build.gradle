@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+        instrumentTest.setRoot('tests')
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    defaultConfig {
+        applicationId "com.sby.practice"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // 百度地图
+    compile files('libs/baidumapapi_base_v4_3_1.jar')
+    compile files('libs/baidumapapi_cloud_v4_3_1.jar')
+    compile files('libs/baidumapapi_map_v4_3_1.jar')
+    compile files('libs/baidumapapi_radar_v4_3_1.jar')
+    compile files('libs/baidumapapi_search_v4_3_1.jar')
+    compile files('libs/baidumapapi_util_v4_3_1.jar')
+    compile files('libs/locSDK_6.13.jar')
+    // MD
+    // AllAngleExpandableButton
+    // GSON
+    //ToggleButton
+    // 注解框架
+    // 下拉框
+    // 吐司
+    // 日历选择
+    compile project(':library_calendar')
+    // 权限管理
+    // 网络连接
+    //    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    // 图片框架——剪切
+    // 对话框
+    // 布局
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.github.uin3566:AllAngleExpandableButton:v1.2.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.zcw:togglebutton-library:1.0.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.github.johnpersano:supertoasts:2.0'
+    compile 'com.squareup.okhttp:okhttp:2.7.0'
+    compile 'com.squareup.okio:okio:1.9.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.zhy:okhttputils:2.6.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.zhy:percent-support-extends:1.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
+    compile 'com.github.frank-zhu:pullzoomview:1.0.0'
+    compile 'com.mylhyl:acp:1.1.7'
+    compile 'com.github.hss01248:DialogUtil:1.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
+}

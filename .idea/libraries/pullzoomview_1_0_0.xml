@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="pullzoomview-1.0.0">
+    <CLASSES>
+      <root url="file://E:/Base/.android/build-cache/0ee8dcb6dbe1be45f863273d65b542302e6e5e69/output/res" />
+      <root url="jar://E:/Base/.android/build-cache/0ee8dcb6dbe1be45f863273d65b542302e6e5e69/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Base/.gradle/caches/modules-2/files-2.1/com.github.frank-zhu/pullzoomview/1.0.0/53b52353400a39c5fbf7b2f57d8733101868701d/pullzoomview-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

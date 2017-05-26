@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    tools:context="com.sby.practice.ui.aty.favorite.FavoAddActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_favo_add_tb_toolbar"
+        style="@style/toolbar_style"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <AutoCompleteTextView
+            android:id="@+id/activity_favo_add_et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/edit_backgroud"
+            android:drawableLeft="@mipmap/search_icon"
+            android:drawablePadding="@dimen/padding10"
+            android:hint="@string/favo_search_hint"
+            android:imeOptions="actionSearch"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:padding="@dimen/padding10"
+            android:lines="1"
+            android:textColor="@color/ios_btntext_blue"
+            android:textColorHint="@color/gray"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_favo_add_ll_bottom"
+        android:layout_below="@id/activity_favo_add_tb_toolbar"
+        android:divider="@mipmap/input_line"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@mipmap/search_icon"
+            android:drawablePadding="10dp"
+            android:text="@string/see_history"
+            android:textColor="@color/ios_btntext_blue"
+            android:textSize="@dimen/textSize18"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_favo_add_rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_above="@+id/activity_favo_add_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@id/activity_favo_add_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:divider="@color/gray"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/activity_favo_add_tv_choosePoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/my_location"/>
+
+        <TextView
+            android:id="@+id/activity_favo_add_tv_myLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/map_choose_point"/>
+
+        <TextView
+            android:id="@+id/activity_favo_add_tv_delAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@mipmap/ic_del_all"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/del_all"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

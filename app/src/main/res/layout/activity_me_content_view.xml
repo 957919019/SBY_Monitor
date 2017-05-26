@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:divider="@mipmap/input_line"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/left_text_18sp"
+                android:text="@string/company_name"/>
+
+            <TextView
+                android:id="@+id/activity_me_tv_companyName"
+                style="@style/right_text_18sp"
+                android:padding="@dimen/padding10"
+                android:text="北京圣博赢科技有限公司"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/left_text_18sp"
+                android:text="@string/use_airport_num"/>
+
+            <TextView
+                android:id="@+id/activity_me_tv_airportNum"
+                style="@style/right_text_18sp"
+                android:padding="@dimen/padding10"
+                android:text="19"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/left_text_18sp"
+                android:text="@string/work_area_num"/>
+
+            <TextView
+                android:id="@+id/activity_me_tv_areaNum"
+                style="@style/right_text_18sp"
+                android:padding="@dimen/padding10"
+                android:text="20"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/left_text_18sp"
+                android:text="@string/running_flight_num"/>
+
+            <TextView
+                android:id="@+id/activity_me_tv_airNum"
+                style="@style/right_text_18sp"
+                android:padding="@dimen/padding10"
+                android:text="80"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/left_text_18sp"
+                android:text="@string/work_type"/>
+
+            <TextView
+                android:id="@+id/activity_me_tv_airType"
+                style="@style/right_text_18sp"
+                android:padding="@dimen/padding10"
+                android:text="勘察、农林、飞机、地铁"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/activity_me_tv_model"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="@dimen/padding10"
+            android:drawableRight="@mipmap/nic_more"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding10"
+            android:text="@string/air_model"
+            android:textColor="@color/ios_btntext_blue"
+            android:textSize="@dimen/textSize18"/>
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.sby.practice">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+
+    <!-- 允许程序连接到已配对的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!-- 允许程序发现和配对蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- 允许访问振动设备 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 屏幕保持唤醒 不锁屏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 允许应用程序更改主屏幕中的设置和快捷方式 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application
+        android:name="com.sby.application.MyMapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="Android:icon, android:theme">
+        <intent-filter>
+            <action android:name="android.intent.action.SEND"/>
+
+            <category android:name="android.intent.category.DEFAULT"/>
+
+            <data android:mimeType="text/plain"/>
+        </intent-filter>
+
+        <!-- 百度地图key -->
+        <!--<meta-data-->
+            <!--android:name="com.baidu.lbsapi.API_KEY"-->
+            <!--android:value="QaK64TRLa6jwhpcYIBpdF08UaxSldw8T"/>-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="xqrRh9DrbKohVgsYby4QPVFLGnrAeR44"/>
+        <!-- 百度定位权限 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+        <!-- 测试 -->
+        <activity
+            android:name=".ui.aty.test.TestActivity2"
+            android:label="@string/title_activity_test">
+        </activity>
+        <!-- 欢迎页 -->
+        <activity android:name=".ui.aty.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- 地图主界面 -->
+        <activity
+            android:name=".ui.aty.MainActivity"
+            android:launchMode="singleTask">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <!-- 登录界面 -->
+        <activity
+            android:name=".ui.aty.user.LoginActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <!-- 注册 -->
+        <activity
+            android:name=".ui.aty.user.RegisterActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity android:name=".ui.aty.user.FindPwdActivity">
+
+            <!-- 搜索 -->
+        </activity>
+        <activity android:name=".ui.aty.search.SearchActivity">
+        </activity>
+        <!-- 搜索结果 -->
+        <activity android:name=".ui.aty.search.SearchResultActivity">
+        </activity>
+        <!-- 设置 -->
+        <activity android:name=".ui.aty.options.SettingActivity">
+        </activity>
+        <!-- 数据统计 -->
+        <activity android:name=".ui.aty.options.StatisticsData">
+        </activity>
+        <!-- 反馈 -->
+        <activity android:name=".ui.aty.options.Feedback">
+        </activity>
+        <!-- 我的 -->
+        <activity android:name=".ui.aty.me.MeActivity">
+        </activity>
+        <!-- 飞机型号 -->
+        <activity android:name=".ui.aty.me.FlightModelActivity">
+        </activity>
+        <!-- 飞机选择 -->
+        <activity android:name=".ui.aty.options.Help">
+        </activity>
+        <activity android:name=".ui.aty.user.ChooseCompany">
+        </activity>
+        <activity
+            android:name=".ui.aty.favorite.FavoActivity"
+            android:label="@string/title_activity_favo_address">
+        </activity>
+        <activity
+            android:name=".ui.aty.favorite.FavoAddActivity"
+            android:label="@string/title_activity_favo_add">
+        </activity>
+        <activity android:name=".ui.aty.favorite.FavoSearchResultActivity">
+        </activity>
+        <activity android:name=".ui.aty.mapFunction.TrackPlayBackActivity">
+        </activity>
+        <activity android:name=".ui.aty.otherservice.WeatherActivity">
+        </activity>
+        <activity android:name=".ui.aty.TempActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.aty.otherservice.HuLinActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".ui.aty.otherservice.ChaXunActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name=".ui.aty.otherservice.QingBao">
+        </activity>
+    </application>
+
+</manifest>

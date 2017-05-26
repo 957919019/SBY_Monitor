@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--大标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="查询计划"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <!--标题：查询条件-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:src="@mipmap/xia"/>
+
+            <TextView
+                style="@style/web_title_blue"
+                android:text="查询条件："/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="起始飞行时间："/>
+
+            <TextView
+                android:id="@+id/tv_startTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/juxing_3raidus"
+                android:drawablePadding="8dp"
+                android:drawableRight="@mipmap/calendar"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="选择时间"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="终止飞行时间："/>
+
+            <TextView
+                android:id="@+id/tv_endTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/juxing_3raidus"
+                android:drawablePadding="8dp"
+                android:drawableRight="@mipmap/calendar"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="选择时间"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_margin="10dp"
+            android:background="@drawable/bt_regester"
+            android:id="@+id/bt_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查询"/>
+
+        <!--标题：查询结果-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:src="@mipmap/xia"/>
+
+            <TextView
+                style="@style/web_title_blue"
+                android:text="查询结果："/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</ScrollView>

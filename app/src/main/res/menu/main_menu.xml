@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <item
+        android:id="@+id/im_plan_apply"
+        android:icon="@mipmap/ic_launcher"
+        android:title="计划申请"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/im_plan_select"
+        android:icon="@mipmap/ic_launcher"
+        android:title="计划查询"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/im_weather"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="气象服务"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/im_qingbao"
+        android:title="情报服务"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bt_verification_code"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/im_plan_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@mipmap/nic_feedback_press"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="护林申请"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/im_plan_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@mipmap/nic_feedback_press"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="护林查询"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/im_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@mipmap/ic_statisticsdata"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="气象服务"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/im_qingbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@mipmap/nic_collect"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="情报服务"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+</LinearLayout>

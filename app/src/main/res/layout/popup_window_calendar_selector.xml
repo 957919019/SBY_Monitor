@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/half_transparent_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/page_bg_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pop_window_calendar_view">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:gravity="center_vertical"
+                android:text="@string/choose_one_date"
+                android:textSize="@dimen/textSize18"/>
+
+            <Button
+                android:id="@+id/pop_window_bt_getDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/home_bt_selector"
+                android:text="@string/Done"
+                android:textSize="@dimen/textSize18"
+                />
+        </RelativeLayout>
+
+        <cn.carbs.android.gregorianlunarcalendar.library.view.GregorianLunarCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@id/pop_window_calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y480"
+            android:layout_alignParentBottom="true"
+            app:glcv_GregorianThemeColor="@color/colorGregorian"
+            app:glcv_NormalTextColor="@color/colorPickerTextSelected"
+
+            app:glcv_ScrollAnimation="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

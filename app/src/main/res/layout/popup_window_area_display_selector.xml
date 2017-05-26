@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/page_bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10"
+        android:text="@string/area_display"
+        android:textSize="@dimen/textSize18"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pop_exp_layout_area_display_content_rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/pop_exp_layout_area_display_content_cb_report"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="报告点"/>-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/pop_exp_layout_area_display_content_cb_fixed"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="固定空域"/>-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/pop_exp_layout_area_display_content_cb_ranger"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="护林航线"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/pop_exp_layout_area_display_content_cb_agrochemical"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="农化机场"/>-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/pop_exp_layout_area_display_content_cb_rangerPort"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="护林机场"/>-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/pop_exp_layout_area_display_content_cb_civilAviation"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="民航机场"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/pop_exp_layout_area_display_content_cb_noFlyZone"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="禁飞区"/>-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/pop_exp_layout_area_display_content_cb_gasStation"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="加油点"/>-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/pop_exp_layout_area_display_content_cb_cARoute"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="加油点"/>-->
+
+    <!--</LinearLayout>-->
+</LinearLayout>

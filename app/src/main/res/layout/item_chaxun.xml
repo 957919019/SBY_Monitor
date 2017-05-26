@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_cx_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+    android:background="@color/light_green"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="编号："/>
+
+            <TextView
+                android:id="@+id/item_cx_bianhao"
+                style="@style/web_title_et"/>
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="计划类型："/>
+
+            <TextView
+                android:id="@+id/item_cx_leixing"
+                style="@style/web_title_et"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="机号："/>
+
+            <TextView
+                android:id="@+id/item_cx_jihao"
+                style="@style/web_title_et"/>
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="预计起降时间："/>
+
+            <TextView
+                android:id="@+id/item_cx_yujitime"
+                style="@style/web_title_et"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="起飞机场："/>
+
+            <TextView
+                android:id="@+id/item_cx_qifeijc"
+                style="@style/web_title_et"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="降落机场："/>
+
+            <TextView
+                android:id="@+id/item_cx_jiangluojc"
+                style="@style/web_title_et"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/web_title_2"
+                android:text="飞行日期："/>
+
+            <TextView
+                android:id="@+id/item_cx_feixingdate"
+                style="@style/web_title_et"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_cx_visb"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/item_cx_zt1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/selector_chaxun_item"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/item_cx_zt2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/selector_chaxun_item"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/item_cx_zt3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/selector_chaxun_item"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/item_cx_zt4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/selector_chaxun_item"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_hulin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/nic_more"
+        android:gravity="center_horizontal"
+        android:text="000"
+        android:textSize="18dp" />
+
+</LinearLayout>

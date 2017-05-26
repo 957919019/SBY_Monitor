@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/system_background"
+    tools:context=".ui.aty.options.Feedback">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_feedback_tb_toolbar"
+                style="@style/toolbar_style">
+
+                <TextView
+                    style="@style/toolbar_gravity_title"
+                    android:text="@string/feedback"/>
+            </android.support.v7.widget.Toolbar>
+
+            <EditText
+                android:id="@+id/activity_feedback_et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="9"
+                android:layout_margin="@dimen/margin10"
+                android:background="@drawable/edit_backgroud"
+                android:gravity="left|top"
+                android:hint="@string/input_your_feedback_content"
+                android:inputType="textMultiLine"
+                android:minLines="9"
+                android:padding="@dimen/padding10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize18"/>
+
+            <Button
+                android:id="@+id/activity_feedback_bt_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:background="@color/gray"
+                android:clickable="false"
+                android:text="@string/upload_to_our"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize18"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>

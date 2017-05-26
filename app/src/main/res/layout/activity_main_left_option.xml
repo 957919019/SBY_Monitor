@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/app_logo"/>
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="圣博赢"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="星空通航公司"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:divider="@mipmap/input_line"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <!--按下textView背景变色-->
+        <!--android:background="@drawable/left_option_background"-->
+
+        <TextView
+            android:id="@+id/activity_main_left_option_tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_setting"
+            android:drawablePadding="15dp"
+            android:gravity="center"
+            android:padding="@dimen/padding15"
+            android:text="@string/setting"
+            android:textColor="@drawable/left_option_text_color"/>
+
+        <TextView
+            android:id="@+id/activity_main_left_option_tv_statisticsData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_statisticsdata"
+            android:drawablePadding="15dp"
+            android:gravity="center"
+            android:padding="@dimen/padding15"
+            android:text="@string/statistics_data"
+            android:textColor="@drawable/left_option_text_color"/>
+
+        <TextView
+            android:id="@+id/activity_main_left_option_tv_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:drawableLeft="@mipmap/ic_feedback"
+            android:drawablePadding="15dp"
+            android:gravity="center"
+            android:padding="@dimen/padding15"
+            android:text="@string/feedback"
+            android:textColor="@drawable/left_option_text_color"/>
+
+
+        <TextView
+            android:id="@+id/activity_main_left_option_tv_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_help"
+            android:drawablePadding="15dp"
+            android:gravity="center"
+            android:padding="@dimen/padding15"
+            android:text="@string/help"
+            android:textColor="@drawable/left_option_text_color"/>
+    </LinearLayout>
+</RelativeLayout>
